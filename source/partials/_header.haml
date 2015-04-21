@@ -1,0 +1,20 @@
+%nav.navbar.navbar-default.navbar-fixed-top.insedge-nav
+	.container
+		.navbar-header
+			%button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+				%span.sr-only Toggle navigation
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			%a.navbar-brand{:href => "/"} Inspiration Edge
+		#navbar.collapse.navbar-collapse
+			%ul.nav.navbar-nav.navbar-right
+				%li{ is_page_active('/')}
+					= link_to 'HOME', '/index.html'
+				%li{ is_page_active('/studio/')}
+					= link_to 'STUDIO', '/studio.html'
+				%li{ is_page_active('/products/')}
+					= link_to 'PRODUCTS', '/products.html'
+				%li{ is_page_active('/contact/')}
+					= link_to 'CONTACT', '/contact.html'
+
