@@ -133,7 +133,15 @@ h2.side-heading {
     width: 100%;
     max-width: 100px
 }
-
+.product-image{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom:1px;
+    border:solid 1px #eee
+}
+.product-section{
+    border-bottom: solid 1px #eee;
+}
 
 footer {
     background-color: #312C62;
